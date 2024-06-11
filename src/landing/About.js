@@ -28,9 +28,9 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="mr-auto place-self-start lg:col-span-7 lg:pl-8 mt-8 lg:mb-5 md:p-5 md:ml-10">
-            <div className="text-[#0060B8] text-left">
-              <h1 className="font-semibold">About Us</h1>
+          <div className="mr-auto place-self-start lg:col-span-7 lg:pl-8 mt-8 lg:mb-5 lg:mt-20 md:p-5 md:ml-10">
+            <div className="text-[#0060B8]  text-left">
+              <h1 className="font-semibold text-[#0060B8]">About Us</h1>
             </div>
             <h1 className="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-none text-left lg:text-5xl md:text-5xl xl:text-6xl ">
               Fiza Engineering Corporation.

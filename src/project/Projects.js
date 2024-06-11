@@ -89,12 +89,12 @@ class Projects extends Component {
                 </a>
               </h3>
               <p className="subtitle">{val.projectSubtitle}</p>
-              <a
+              {/* <a
                 href={`${process.env.PUBLIC_URL}/${val.pageLink}`}
                 className="see-more-link"
               >
                 SEE MORE
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

@@ -9,6 +9,7 @@ import footer from "../assets/images/footer.png"
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
 import about from "../assets/images/about.png"
+import ban from "../assets/images/ban.png"
 class About extends Component {
   constructor() {
     super();
@@ -59,11 +60,16 @@ class About extends Component {
           <div className="about-section section-space--inner--bottom--120">
             <div className="container">
               <div className="row row-25 align-items-center">
+                
                 <div className="col-lg-6 col-12 mb-30">
+                  
                   <div className="about-image-two ">
+               
                     <img className="lg:h-screen lg:ml-10" src={about} alt="" />
                     
                   </div>
+                  
+                  
                 </div>
                 <div className="col-lg-6 col-12 mb-30">
                   <div className="about-content-two">
