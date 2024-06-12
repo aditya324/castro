@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import NavBar from "../components/NavBar";
 import Sidebar from "./components/Sidebar";
-import BrandLogoSlider from "../components/BrandLogoSlider";
+import ServiceGallery from "./components/ServiceGallery";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
-import ServiceGallery from "./components/ServiceGallery";
-class ServiceDetailsRightSidebar extends Component {
+
+class ServiceDetailsLeftSidebar2 extends Component {
   render() {
     return (
       <div>
@@ -48,23 +48,27 @@ class ServiceDetailsRightSidebar extends Component {
           <div className="service-section">
             <div className="container">
               <div className="row">
-                <div className="col-lg-8 col-12 order-1">
+                <div className="col-lg-8 col-12 order-1 order-lg-2">
                   <div className="service-details">
                     {/* service gallery */}
                     <ServiceGallery />
+
                     <div className="content section-space--top--30">
                       <div className="row">
                         <div className="col-12">
-                          <h2>Construction</h2>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Ratione, sunt perspiciatis error id ipsa atque
-                            unde quis dolore nobis eum aperiam enim blanditiis
-                            pariatur inventore eius commodi consectetur ut.
-                            Totam, assumenda! Laboriosam possimus, corporis
-                            dicta!
+                          <h2 className="font-bold">
+                            Advanced Vehicle Solutions & Waste Management
+                            Equipment
+                          </h2>
+                          <p className="mt-3">
+                            We supply complete road construction machinery,
+                            including dozers, graders, wheel loaders, and more.
+                            We provide various heavy-duty vehicles and
+                            attachments for exploration, mining, and oil & gas
+                            industries. We offer a range of generators,
+                            dredgers, patrol boats, and marine engines.
                           </p>
-                          <p>
+                          {/* <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Asperiores aliquid quod, officiis unde nostrum
                             itaque! Adipisci dolorum, ab dolor, exercitationem
@@ -75,9 +79,9 @@ class ServiceDetailsRightSidebar extends Component {
                             accusantium nemo consequuntur reiciendis autem dicta
                             consequatur earum beatae dolor distinctio, debitis
                             repudiandae?
-                          </p>
+                          </p> */}
                         </div>
-                        <div className="col-lg-6 col-12 section-space--top--30">
+                        {/* <div className="col-lg-6 col-12 section-space--top--30">
                           <h3>Project Analysis</h3>
                           <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -100,20 +104,20 @@ class ServiceDetailsRightSidebar extends Component {
                             elit. Fugiat, animi? Vel quas in minima qui totam,
                             aliquid dolores quaerat voluptatum?
                           </p>
-                        </div>
-                        <div className="col-lg-6 col-12 section-space--top--30">
+                        </div> */}
+                        {/* <div className="col-lg-6 col-12 section-space--top--30">
                           <h3>Project Strategy</h3>
                           <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Fugiat, animi? Vel quas in minima qui totam,
                             aliquid dolores quaerat voluptatum?
                           </p>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-12 order-2">
+                <div className="col-lg-4 col-12 order-2 order-lg-1">
                   <Sidebar />
                 </div>
               </div>
@@ -135,4 +139,4 @@ class ServiceDetailsRightSidebar extends Component {
   }
 }
 
-export default ServiceDetailsRightSidebar;
+export default ServiceDetailsLeftSidebar2;

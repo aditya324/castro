@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 import BrandLogoSlider from "../components/BrandLogoSlider";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
-class Projects extends Component {
+class Products extends Component {
   render() {
     let data = [
       {
@@ -140,12 +140,12 @@ class Projects extends Component {
             <div className="row">
               <div className="col">
                 <div className="page-banner text-center">
-                  <h1>Project</h1>
+                  <h1>Products</h1>
                   <ul className="page-breadcrumb">
                     <li>
                       <a href="/">Home</a>
                     </li>
-                    <li>Project</li>
+                    <li>Products</li>
                   </ul>
                 </div>
               </div>
@@ -211,4 +211,4 @@ class Projects extends Component {
   }
 }
 
-export default Projects;
+export default Products;

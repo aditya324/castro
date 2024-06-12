@@ -116,7 +116,7 @@ const NavBar = () => {
           to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img src={Footer} className="h-14" alt="" />
+          <img src={Footer} className="h-14 object-contain" alt="" />
           {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Flowbite</span> */}
         </Link>
         <button
@@ -134,7 +134,7 @@ const NavBar = () => {
             viewBox="0 0 17 14"
           >
             <path
-              stroke="currentColor"
+              stroke="black"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
@@ -143,7 +143,7 @@ const NavBar = () => {
           </svg>
         </button>
         <div
-          className={`w-full md:block md:w-auto ${
+          className={`w-full md:block md:w-auto  ${
             showMobileMenu ? "block" : "hidden"
           }`}
           id="navbar-default"
@@ -170,7 +170,7 @@ const NavBar = () => {
                   location.pathname === "/about-us" ? { color: "blue" } : {}
                 }
               >
-                About
+                About-us
               </Link>
             </li>
             <li>
@@ -181,10 +181,10 @@ const NavBar = () => {
                   location.pathname === "/services" ? { color: "blue" } : {}
                 }
               >
-                Services
+                S.O.A
               </Link>
             </li>
-           
+
             <li>
               <Link
                 to="/projects"
@@ -194,6 +194,28 @@ const NavBar = () => {
                 }
               >
                 Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/products"
+                className="block py-2 px-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                style={
+                  location.pathname === "/products" ? { color: "blue" } : {}
+                }
+              >
+                Products
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/photoAlbum"
+                className="block py-2 px-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                style={
+                  location.pathname === "/photoAlbum" ? { color: "blue" } : {}
+                }
+              >
+                Gallery
               </Link>
             </li>
             <li>

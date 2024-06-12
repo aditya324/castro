@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import NavBar from "../components/NavBar";
 import Sidebar from "./components/Sidebar";
+import ServiceGallery from "./components/ServiceGallery";
 import BrandLogoSlider from "../components/BrandLogoSlider";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
-import ServiceGallery from "./components/ServiceGallery";
-class ServiceDetailsRightSidebar extends Component {
+class ServiceDetailsLeftSidebar1 extends Component {
   render() {
     return (
       <div>
@@ -48,23 +48,31 @@ class ServiceDetailsRightSidebar extends Component {
           <div className="service-section">
             <div className="container">
               <div className="row">
-                <div className="col-lg-8 col-12 order-1">
+                <div className="col-lg-8 col-12 order-1 order-lg-2">
                   <div className="service-details">
                     {/* service gallery */}
                     <ServiceGallery />
+
                     <div className="content section-space--top--30">
                       <div className="row">
                         <div className="col-12">
-                          <h2>Construction</h2>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Ratione, sunt perspiciatis error id ipsa atque
-                            unde quis dolore nobis eum aperiam enim blanditiis
-                            pariatur inventore eius commodi consectetur ut.
-                            Totam, assumenda! Laboriosam possimus, corporis
-                            dicta!
+                          <h2 className="font-bold">
+                            Comprehensive engineering solutions for plant &
+                            machinery
+                          </h2>
+                          <p className="mt-3">
+                            We offer comprehensive solutions for mining
+                            industries, from initial setup to production stages.
+                            We provide beneficiation, ore processing, auto
+                            washing, grading, stockpiling, and conveyor systems
+                            for efficient mining operations. We design and
+                            supply special-purpose equipment tailored to
+                            specific site requirements, including automation and
+                            downstream operations. We offer flexible financial
+                            terms for plant and machinery supply, including
+                            leasing and deferred payment options.
                           </p>
-                          <p>
+                          {/* <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Asperiores aliquid quod, officiis unde nostrum
                             itaque! Adipisci dolorum, ab dolor, exercitationem
@@ -75,9 +83,9 @@ class ServiceDetailsRightSidebar extends Component {
                             accusantium nemo consequuntur reiciendis autem dicta
                             consequatur earum beatae dolor distinctio, debitis
                             repudiandae?
-                          </p>
+                          </p> */}
                         </div>
-                        <div className="col-lg-6 col-12 section-space--top--30">
+                        {/* <div className="col-lg-6 col-12 section-space--top--30">
                           <h3>Project Analysis</h3>
                           <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -100,20 +108,20 @@ class ServiceDetailsRightSidebar extends Component {
                             elit. Fugiat, animi? Vel quas in minima qui totam,
                             aliquid dolores quaerat voluptatum?
                           </p>
-                        </div>
-                        <div className="col-lg-6 col-12 section-space--top--30">
+                        </div> */}
+                        {/* <div className="col-lg-6 col-12 section-space--top--30">
                           <h3>Project Strategy</h3>
                           <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Fugiat, animi? Vel quas in minima qui totam,
                             aliquid dolores quaerat voluptatum?
                           </p>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-12 order-2">
+                <div className="col-lg-4 col-12 order-2 order-lg-1">
                   <Sidebar />
                 </div>
               </div>
@@ -135,4 +143,4 @@ class ServiceDetailsRightSidebar extends Component {
   }
 }
 
-export default ServiceDetailsRightSidebar;
+export default ServiceDetailsLeftSidebar1;
