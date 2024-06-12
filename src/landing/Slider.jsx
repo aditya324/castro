@@ -17,7 +17,7 @@ const items = [
   >
     <div className="mt-5">
       <h1 className="font-bold text-left">Exceeded our expectation</h1>
-      <p className="mt-3 text-left">
+      <p className="mt-3 text-left ">
         Lorem Ipsum is that it has a more-or-less normal distribution of
         letters, but also the leap into essentially unchanged. Lorem Ipsum is
         that it has a more-or-less normal distribution of letters, but also the

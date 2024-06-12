@@ -3,85 +3,99 @@ import NavBar from "../components/NavBar";
 import BrandLogoSlider from "../components/BrandLogoSlider";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
+import batch from "../assets/images/fiza/Batching plant.png";
+import crush from "../assets/images/fiza/Crushing plant.png";
+import asphalt from "../assets/images/fiza/Asphalt plant.png";
+import cement from "../assets/images/fiza/cement plant.png";
+import mining from "../assets/images/fiza/mining.png";
+import environ from "../assets/images/fiza/Environmental.png";
+import steel from "../assets/images/fiza/Steel mill.png";
+import waste from "../assets/images/fiza/Waste managmet.png";
+import solar from "../assets/images/fiza/Solar plant.png";
+import power from "../assets/images/fiza/power1.png";
+import glass from "../assets/images/fiza/glass1.png";
+import poban from "../assets/images/fiza/poban.png";
+
 class Projects extends Component {
   render() {
     let data = [
       {
         pageLink: "project-details",
-        img: "project-1.jpg",
-        projectTitle: "POWER PLANTS (NEW OR REFURBISHED)",
-        projectSubtitle:
-          "We specialize in designing and constructing power plants, including thermal, hydro, gas, or oil fields, catering to diverse energy requirements.",
-      },
-      {
-        pageLink: "project-details",
-        img: "project-2.jpg",
+        img: batch,
         projectTitle: "BATCHING PLANT (CONCRETE)",
         projectSubtitle:
           "Offering batching plants ranging from 30 to 160 cubic meters, we provide efficient solutions for concrete production in various capacities.",
       },
       {
         pageLink: "project-details",
-        img: "project-3.jpg",
+        img: crush,
         projectTitle: "CRUSHING PLANT",
         projectSubtitle:
           "Our crushing plants range from 30 to 240 tons per hour, delivering high-quality aggregates for construction projects of all scales.",
       },
       {
         pageLink: "project-details",
-        img: "project-4.jpg",
+        img: asphalt,
         projectTitle: "ASPHALT PLANT",
         projectSubtitle:
           "Providing both mobile and stationary types, our asphalt plants ensure reliable production of quality asphalt for road construction.",
       },
+
       {
         pageLink: "project-details",
-        img: "project-5.jpg",
-        projectTitle: "GLASS PROJECT",
-        projectSubtitle:
-          "Specializing in floating glass projects, we design and construct glass manufacturing facilities with precision and efficiency.",
-      },
-      {
-        pageLink: "project-details",
-        img: "project-6.jpg",
+        img: cement,
         projectTitle: "CEMENT PLANT",
         projectSubtitle:
           "From 400 to 7000 metric tons per day, our cement plants are tailored to meet the demands of the construction industry with precision and efficiency.",
       },
       {
         pageLink: "project-details",
-        img: "project-7.jpg",
+        img: mining,
         projectTitle: "MINING",
         projectSubtitle:
           "We undertake mining projects for various minerals including ferrous ore, copper, silica, limestone, and coal, ensuring sustainable resource extraction.",
       },
       {
         pageLink: "project-details",
-        img: "project-8.jpg",
+        img: environ,
         projectTitle: "ENVIRONMENTAL PROJECTS",
         projectSubtitle:
           "Our environmental projects include addressing sea corrosion, dredging jobs, and constructing mini ports and fishing harbors to promote eco-friendly practices.",
       },
       {
         pageLink: "project-details",
-        img: "project-8.jpg",
+        img: steel,
         projectTitle: "STEEL MILLS",
         projectSubtitle:
           "Specializing in smelters and billet makers, we provide state-of-the-art solutions for steel production to meet the demands of various industries.",
       },
       {
         pageLink: "project-details",
-        img: "project-8.jpg",
+        img: waste,
         projectTitle: "WASTE MANAGEMENT",
         projectSubtitle:
           "We offer comprehensive waste management solutions, including sorting and recycling, to promote environmental sustainability.",
       },
       {
         pageLink: "project-details",
-        img: "project-8.jpg",
+        img: solar,
         projectTitle: "Solar Power Plants",
         projectSubtitle:
           "Specializing in solar power plants, we design and construct efficient and sustainable renewable energy solutions to meet growing energy demands.",
+      },
+      {
+        pageLink: "project-details",
+        img: power,
+        projectTitle: "POWER PLANTS (NEW OR REFURBISHED)",
+        projectSubtitle:
+          "We specialize in designing and constructing power plants, including thermal, hydro, gas, or oil fields, catering to diverse energy requirements.",
+      },
+      {
+        pageLink: "project-details",
+        img: glass,
+        projectTitle: "GLASS PROJECT",
+        projectSubtitle:
+          "Specializing in floating glass projects, we design and construct glass manufacturing facilities with precision and efficiency.",
       },
     ];
 
@@ -96,19 +110,14 @@ class Projects extends Component {
               <div className="service-grid-item__image-wrapper">
                 {/* href={`${process.env.PUBLIC_URL}/${val.pageLink}`} */}
                 <a>
-                  <img
-                    src={`assets/img/projects/${val.img}`}
-                    className="img-fluid"
-                    alt=""
-                  />
+                  <img src={`${val.img}`} className="img-fluid" alt="" />
                 </a>
               </div>
             </div>
             <div className="service-grid-item__content">
               <h3 className="title">
-                <a href={`${process.env.PUBLIC_URL}/${val.pageLink}`}>
-                  {val.projectTitle}
-                </a>
+                {/* /${val.pageLink} */}
+                <a href={`${process.env.PUBLIC_URL}`}>{val.projectTitle}</a>
               </h3>
               <p className="subtitle">{val.projectSubtitle}</p>
               {/* <a
@@ -133,7 +142,7 @@ class Projects extends Component {
         <div
           className="breadcrumb-area breadcrumb-bg"
           style={{
-            backgroundImage: `url(assets/img/backgrounds/funfact-bg.jpg)`,
+            backgroundImage: `url(${poban})`,
           }}
         >
           <div className="container">

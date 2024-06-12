@@ -176,7 +176,7 @@ class About extends Component {
                     </p>
                     <a
                       href={`${process.env.PUBLIC_URL}/contact-us`}
-                      className="ht-btn--default ht-btn--default--dark-hover section-space--top--20"
+                      className="ht-btn--default ht-btn--default--dark-hover section-space--top--20 rounded-lg"
                     >
                       Contact us
                     </a>

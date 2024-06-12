@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Slider from 'react-slick';
+import Slider from "react-slick";
 import mainimage from "../assets/images/mainimg.png";
-import images from "../data/images.js"; 
-import "../index.css"
+import images from "../data/images.js";
+import "../index.css";
 
 const NextArrow = (props) => {
   const { className, style, onClick } = props;
@@ -18,12 +18,12 @@ const NextArrow = (props) => {
         zIndex: 2,
         right: "10px",
         top: "50%",
-        transform: "translateY(-50%)"
+        transform: "translateY(-50%)",
       }}
       onClick={onClick}
     />
   );
-}
+};
 
 const PrevArrow = (props) => {
   const { className, style, onClick } = props;
@@ -39,15 +39,15 @@ const PrevArrow = (props) => {
         zIndex: 2,
         left: "10px",
         top: "50%",
-        transform: "translateY(-50%)"
+        transform: "translateY(-50%)",
       }}
       onClick={onClick}
     />
   );
-}
+};
 
 const Latest = () => {
-  const [category, setCategory] = useState('All');
+  const [category, setCategory] = useState("All");
 
   const handleCategoryChange = (categoryKey) => {
     setCategory(categoryKey);
@@ -67,8 +67,8 @@ const Latest = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 640, // For screens smaller than 640px
@@ -76,10 +76,10 @@ const Latest = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
-      }
-    ]
+          dots: true,
+        },
+      },
+    ],
   };
 
   return (
@@ -91,28 +91,32 @@ const Latest = () => {
             <span className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-52 h-1  bg-[#0060B8]"></span>
           </h1>
         </div>
-        <p className="inline-block text-sm mt-4 lg:mt-5">
+        <p className="inline-block text-sm mt-4 lg:mt-5 lg:px-0 px-2  ">
           Lorem Ipsum is that it has a more-or-less normal distribution of
           letters, but also the leap <br />
           <span className="block">into essentially unchanged.</span>
         </p>
       </div>
-      <div className="flex lg:justify-center lg:flex-row lg:gap-5 lg:pb-8 lg:mt-8 pl-8 flex-col mt-3 mb-3 ">
-        <button onClick={() => handleCategoryChange('All')}>All</button>
-        <button onClick={() => handleCategoryChange('plants')}>Plants</button>
-        <button onClick={() => handleCategoryChange('GlassProject')}>Glass Project</button>
-        <button onClick={() => handleCategoryChange('Mining')}>Mining</button>
-        <button onClick={() => handleCategoryChange('Environment')}>Environment</button>
-        <button onClick={() => handleCategoryChange('Mills')}>Mills</button>
+      <div className="flex lg:justify-center lg:flex-row lg:gap-5 lg:pb-8 lg:mt-8  flex-col mt-3 mb-3 ">
+        <button onClick={() => handleCategoryChange("All")}>All</button>
+        <button onClick={() => handleCategoryChange("plants")}>Plants</button>
+        <button onClick={() => handleCategoryChange("GlassProject")}>
+          Glass Project
+        </button>
+        <button onClick={() => handleCategoryChange("Mining")}>Mining</button>
+        <button onClick={() => handleCategoryChange("Environment")}>
+          Environment
+        </button>
+        <button onClick={() => handleCategoryChange("Mills")}>Mills</button>
       </div>
       <div
         className="w-full lg:h-40 relative"
         style={{
           backgroundImage: `url(${mainimage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
           height: "450px",
-          marginBottom: "2em"
+          marginBottom: "2em",
         }}
       >
         <div className="absolute inset-0">
@@ -130,12 +134,18 @@ const Latest = () => {
                 />
                 <div className="absolute inset-0 bg-[#FFFCEF] top-8 lg:mx-0  opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
                   <div className="flex flex-col items-center ">
-                    <img src={image.img} alt={image.alt} className="h-14 w-14" />
-                    <h1 className="lg:px-5 my-3 font-semibold">{image.topic}</h1>
-                    <p className="lg:px-5">{image.para}</p>
+                    <img
+                      src={image.img}
+                      alt={image.alt}
+                      className="h-14 w-14"
+                    />
+                    <h1 className="lg:px-5 my-3 font-semibold ">
+                      {image.topic}
+                    </h1>
+                    <p className="lg:px-5 text-center">{image.para}</p>
                     <button
                       type="button"
-                      className="text-blue-700 font-medium rounded-lg text-sm py-2.5 flex items-center justify-end mt-10 ml-28"
+                      className="text-blue-700 font-medium rounded-lg text-sm py-2.5 flex items-center justify-end mt-10 lg:ml-28 ml-56"
                     >
                       Know more
                       <svg
@@ -161,12 +171,12 @@ const Latest = () => {
           </Slider>
         </div>
       </div>
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <h1 className="text-[#0060B8] text-3xl font-bold mb-8 relative inline-block">
           What Our Client Says
           <span className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-1/2 h-1  bg-[#0060B8]"></span>
         </h1>
-      </div>
+      </div> */}
     </div>
   );
 };

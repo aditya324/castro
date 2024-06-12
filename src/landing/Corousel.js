@@ -36,7 +36,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full lg:h-screen overflow-hidden">
+    <div className="relative w-full lg:h-screen overflow-x-hidden">
       <nav className="absolute w-full bg-transparent z-10">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between  mx-auto">
           <Link
