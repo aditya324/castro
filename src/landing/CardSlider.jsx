@@ -11,7 +11,7 @@ const cardsData = [
   {
     no: 1,
     image: sliderimage1,
-    title: 'Supply of construction equipments',
+    title: 'Ore and mining',
     description: 'Lorem Ipsum is that it has a more-or-less normal distribution of letters, but also the leap into essentially unchanged.'
   },
   {
@@ -28,6 +28,12 @@ const cardsData = [
   },
   {
     no: 4,
+    image: sliderimage4,
+    title: 'Infra structure-project development',
+    description: 'Lorem Ipsum is that it has a more-or-less normal distribution of letters, but also the leap into essentially unchanged.'
+  },
+  {
+    no: 5,
     image: sliderimage4,
     title: 'Infra structure-project development',
     description: 'Lorem Ipsum is that it has a more-or-less normal distribution of letters, but also the leap into essentially unchanged.'

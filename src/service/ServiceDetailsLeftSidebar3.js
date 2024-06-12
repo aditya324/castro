@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import NavBar from "../components/NavBar";
 import Sidebar from "./components/Sidebar";
-import BrandLogoSlider from "../components/BrandLogoSlider";
+import ServiceGallery from "./components/ServiceGallery";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
-import ServiceGallery from "./components/ServiceGallery";
-class ServiceDetailsRightSidebar extends Component {
+
+class ServiceDetailsLeftSidebar3 extends Component {
   render() {
     return (
       <div>
@@ -48,36 +48,37 @@ class ServiceDetailsRightSidebar extends Component {
           <div className="service-section">
             <div className="container">
               <div className="row">
-                <div className="col-lg-8 col-12 order-1">
+                <div className="col-lg-8 col-12 order-1 order-lg-2">
                   <div className="service-details">
                     {/* service gallery */}
                     <ServiceGallery />
+
                     <div className="content section-space--top--30">
                       <div className="row">
                         <div className="col-12">
-                          <h2>Construction</h2>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Ratione, sunt perspiciatis error id ipsa atque
-                            unde quis dolore nobis eum aperiam enim blanditiis
-                            pariatur inventore eius commodi consectetur ut.
-                            Totam, assumenda! Laboriosam possimus, corporis
-                            dicta!
+                          <h2 className="font-bold">
+                            Comprehensive Metal & Mineral Trading and Export
+                          </h2>
+                          <p className="mt-3">
+                            At Fiza Engineering Corporation, we specialize in
+                            the trading and export of a wide range of mined ores
+                            and minerals, catering to the diverse needs of
+                            industries worldwide. Our portfolio includes
+                            high-demand resources such as coal, iron ore,
+                            chromite, copper concentrates, and more, ensuring a
+                            steady supply of essential materials for various
+                            industrial applications.
                           </p>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Asperiores aliquid quod, officiis unde nostrum
-                            itaque! Adipisci dolorum, ab dolor, exercitationem
-                            praesentium dolorem quo voluptatum itaque
-                            dignissimos, sit esse cupiditate. Doloremque rerum
-                            similique a nobis placeat in illum, quo quaerat, ut
-                            repellat, fuga itaque? Nihil mollitia nisi, nam,
-                            accusantium nemo consequuntur reiciendis autem dicta
-                            consequatur earum beatae dolor distinctio, debitis
-                            repudiandae?
+                            We also supply a comprehensive array of industrial
+                            materials, including high-quality copper, titanium
+                            dioxide, steel, fertilizers, and chemical
+                            composites. These materials are crucial for numerous
+                            manufacturing processes and construction projects,
+                            offering superior performance and reliability.
                           </p>
                         </div>
-                        <div className="col-lg-6 col-12 section-space--top--30">
+                        {/* <div className="col-lg-6 col-12 section-space--top--30">
                           <h3>Project Analysis</h3>
                           <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -100,20 +101,20 @@ class ServiceDetailsRightSidebar extends Component {
                             elit. Fugiat, animi? Vel quas in minima qui totam,
                             aliquid dolores quaerat voluptatum?
                           </p>
-                        </div>
-                        <div className="col-lg-6 col-12 section-space--top--30">
+                        </div> */}
+                        {/* <div className="col-lg-6 col-12 section-space--top--30">
                           <h3>Project Strategy</h3>
                           <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Fugiat, animi? Vel quas in minima qui totam,
                             aliquid dolores quaerat voluptatum?
                           </p>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-12 order-2">
+                <div className="col-lg-4 col-12 order-2 order-lg-1">
                   <Sidebar />
                 </div>
               </div>
@@ -135,4 +136,4 @@ class ServiceDetailsRightSidebar extends Component {
   }
 }
 
-export default ServiceDetailsRightSidebar;
+export default ServiceDetailsLeftSidebar3;

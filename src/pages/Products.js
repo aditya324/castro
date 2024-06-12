@@ -3,13 +3,12 @@ import NavBar from "../components/NavBar";
 import BrandLogoSlider from "../components/BrandLogoSlider";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
-import about from "../assets/images/Asphaltplant.png"
-class Projects extends Component {
+class Products extends Component {
   render() {
     let data = [
       {
         pageLink: "project-details",
-        img: about,
+        img: "project-1.jpg",
         projectTitle: "POWER PLANTS (NEW OR REFURBISHED)",
         projectSubtitle:
           "We specialize in designing and constructing power plants, including thermal, hydro, gas, or oil fields, catering to diverse energy requirements.",
@@ -89,40 +88,38 @@ class Projects extends Component {
     let Datalist = data.map((val, i) => {
       return (
         <div
-        className="col-lg-4 col-sm-6 col-12 section-space--bottom--30"
-        key={i}
-        style={{ borderRadius: '10px', overflow: 'hidden' }}
-      >
-        <div className="service-grid-item service-grid-item--style2" style={{ borderRadius: '10px', overflow: 'hidden' }}>
-          <div className="service-grid-item__image">
-            <div className="service-grid-item__image-wrapper">
-              <a>
-                <img
-                  src={`${val.img}`}
-                  className="img-fluid"
-                  alt=""
-                  style={{ objectFit: 'cover', width: '100%', height: 'auto' }}
-                />
-              </a>
+          className="col-lg-4 col-sm-6 col-12 section-space--bottom--30"
+          key={i}
+        >
+          <div className="service-grid-item service-grid-item--style2">
+            <div className="service-grid-item__image">
+              <div className="service-grid-item__image-wrapper">
+                {/* href={`${process.env.PUBLIC_URL}/${val.pageLink}`} */}
+                <a>
+                  <img
+                    src={`assets/img/projects/${val.img}`}
+                    className="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="service-grid-item__content">
+              <h3 className="title">
+                <a href={`${process.env.PUBLIC_URL}/${val.pageLink}`}>
+                  {val.projectTitle}
+                </a>
+              </h3>
+              <p className="subtitle">{val.projectSubtitle}</p>
+              {/* <a
+                href={`${process.env.PUBLIC_URL}/${val.pageLink}`}
+                className="see-more-link"
+              >
+                SEE MORE
+              </a> */}
             </div>
           </div>
-          <div className="service-grid-item__content">
-            <h3 className="title">
-              <a href={`${process.env.PUBLIC_URL}/${val.pageLink}`}>
-                {val.projectTitle}
-              </a>
-            </h3>
-            <p className="subtitle">{val.projectSubtitle}</p>
-            {/* <a
-              href={`${process.env.PUBLIC_URL}/${val.pageLink}`}
-              className="see-more-link"
-            >
-              SEE MORE
-            </a> */}
-          </div>
         </div>
-      </div>
-      
       );
     });
 
@@ -143,12 +140,12 @@ class Projects extends Component {
             <div className="row">
               <div className="col">
                 <div className="page-banner text-center">
-                  <h1>Project</h1>
+                  <h1>Products</h1>
                   <ul className="page-breadcrumb">
                     <li>
                       <a href="/">Home</a>
                     </li>
-                    <li>Project</li>
+                    <li>Products</li>
                   </ul>
                 </div>
               </div>
@@ -160,10 +157,10 @@ class Projects extends Component {
         {/*====================  project page content ====================*/}
         <div className="page-wrapper section-space--inner--120">
           {/*Projects section start*/}
-          <div className="project-section rounded">
+          <div className="project-section">
             <div className="container">
               <div className="row">
-                <div className="col-lg-12 ">
+                <div className="col-lg-12">
                   <div className="project-item-wrapper">
                     <div className="row">{Datalist}</div>
                   </div>
@@ -214,4 +211,4 @@ class Projects extends Component {
   }
 }
 
-export default Projects;
+export default Products;

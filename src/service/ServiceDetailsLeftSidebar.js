@@ -17,7 +17,7 @@ class ServiceDetailsLeftSidebar extends Component {
         <div
           className="breadcrumb-area breadcrumb-bg"
           style={{
-            backgroundImage: `url(assets/img/backgrounds/funfact-bg.jpg)`
+            backgroundImage: `url(assets/img/backgrounds/funfact-bg.jpg)`,
           }}
         >
           <div className="container">
@@ -56,16 +56,26 @@ class ServiceDetailsLeftSidebar extends Component {
                     <div className="content section-space--top--30">
                       <div className="row">
                         <div className="col-12">
-                          <h2>Construction</h2>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Ratione, sunt perspiciatis error id ipsa atque
-                            unde quis dolore nobis eum aperiam enim blanditiis
-                            pariatur inventore eius commodi consectetur ut.
-                            Totam, assumenda! Laboriosam possimus, corporis
-                            dicta!
+                          <h2 className="font-bold">
+                            Ore Minning & quarry industries
+                          </h2>
+                          <p className="mt-3">
+                            Fiza Engineering Corporation provides comprehensive
+                            solutions for the ore mining and quarry industries.
+                            Our services encompass the entire lifecycle of
+                            mining projects, from greenfield development to
+                            production. We offer advanced beneficiation and ore
+                            processing systems, including auto washing, grading,
+                            stockpiling, and conveyor systems to ensure
+                            efficient loading and discharge of final products.
+                            Our specialized equipment is tailored to meet the
+                            specific demands of mining sites, incorporating
+                            automation and cost-effective solutions. We also
+                            facilitate flexible financial arrangements for the
+                            supply of plant and machinery, ensuring seamless
+                            project execution and operational efficiency
                           </p>
-                          <p>
+                          {/* <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Asperiores aliquid quod, officiis unde nostrum
                             itaque! Adipisci dolorum, ab dolor, exercitationem
@@ -76,9 +86,9 @@ class ServiceDetailsLeftSidebar extends Component {
                             accusantium nemo consequuntur reiciendis autem dicta
                             consequatur earum beatae dolor distinctio, debitis
                             repudiandae?
-                          </p>
+                          </p> */}
                         </div>
-                        <div className="col-lg-6 col-12 section-space--top--30">
+                        {/* <div className="col-lg-6 col-12 section-space--top--30">
                           <h3>Project Analysis</h3>
                           <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -101,15 +111,15 @@ class ServiceDetailsLeftSidebar extends Component {
                             elit. Fugiat, animi? Vel quas in minima qui totam,
                             aliquid dolores quaerat voluptatum?
                           </p>
-                        </div>
-                        <div className="col-lg-6 col-12 section-space--top--30">
+                        </div> */}
+                        {/* <div className="col-lg-6 col-12 section-space--top--30">
                           <h3>Project Strategy</h3>
                           <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Fugiat, animi? Vel quas in minima qui totam,
                             aliquid dolores quaerat voluptatum?
                           </p>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>

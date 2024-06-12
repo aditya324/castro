@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 import BrandLogoSlider from "../components/BrandLogoSlider";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
-class Services extends Component {
+class Products extends Component {
   render() {
     let data = [
       {
@@ -15,7 +15,7 @@ class Services extends Component {
           "Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor",
       },
       {
-        pageLink: "service-details-left-sidebar1",
+        pageLink: "service-details-left-sidebar",
         img: "service2.jpg",
         iconClass: "flaticon-004-walkie-talkie",
         serviceTitle:
@@ -24,7 +24,7 @@ class Services extends Component {
           "Design, Development, Manufacturing, Supply, Erection, and Commissioning of Plant & Machineries",
       },
       {
-        pageLink: "service-details-left-sidebar2",
+        pageLink: "service-details-left-sidebar",
         img: "service3.jpg",
         iconClass: "flaticon-015-cart",
         serviceTitle: "Advanced Vehicle Solutions & Waste Management Equipment",
@@ -32,29 +32,29 @@ class Services extends Component {
           "Supply of Off-Road Vehicles & Automobiles, and Waste Management Equipment",
       },
       {
-        pageLink: "service-details-left-sidebar3",
+        pageLink: "service-details-left-sidebar",
         img: "service-3.jpg",
         iconClass: "flaticon-010-tank-1",
         serviceTitle: "Comprehensive Metal & Mineral Trading and Export",
         serviceSubtitle:
-          "We trade and export various mined ores and minerals, including coal, iron ore, chromite, copper concentrates, and more",
+          "Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor",
       },
       {
-        pageLink: "service-details-left-sidebar4",
+        pageLink: "service-details-left-sidebar",
         img: "service-2.jpg",
         iconClass: "flaticon-004-walkie-talkie",
-        serviceTitle: "Agricultural & Commercial Farming Solutions",
+        serviceTitle: "Land Minning",
         serviceSubtitle:
-          "We undertake comprehensive commercial farming projects, leveraging global expertise to ensure optimal crop selection, mechanized plantation, and high profitability.",
+          "Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor",
       },
-      // {
-      //   pageLink: "service-details-left-sidebar",
-      //   img: "service-1.jpg",
-      //   iconClass: "flaticon-002-welding",
-      //   serviceTitle: "Work Management",
-      //   serviceSubtitle:
-      //     "Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor",
-      // },
+      {
+        pageLink: "service-details-left-sidebar",
+        img: "service-1.jpg",
+        iconClass: "flaticon-002-welding",
+        serviceTitle: "Work Management",
+        serviceSubtitle:
+          "Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor",
+      },
     ];
 
     let Datalist = data.map((val, i) => {
@@ -160,4 +160,4 @@ class Services extends Component {
   }
 }
 
-export default Services;
+export default Products;

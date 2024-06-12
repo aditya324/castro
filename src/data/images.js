@@ -28,14 +28,20 @@ const images = {
       topic: "SOLAR POWER PLANT",
       para: "Lorem Ipsum is that it has a more-or-less normal distribution of letters, but also the leap into essentially unchanged.",
     },
-    { src: sliderimage4, alt: "Plants 2",
+    {
+      src: sliderimage4,
+      alt: "Plants 2",
       img: industry,
       topic: "SOLAR POWER PLANT",
-      para: "Lorem Ipsum is that it has a more-or-less normal distribution of letters, but also the leap into essentially unchanged.", },
-    { src: nord, alt: "Glass 1",
+      para: "Lorem Ipsum is that it has a more-or-less normal distribution of letters, but also the leap into essentially unchanged.",
+    },
+    {
+      src: nord,
+      alt: "Glass 1",
       img: industry,
       topic: "SOLAR POWER PLANT",
-      para: "Lorem Ipsum is that it has a more-or-less normal distribution of letters, but also the leap into essentially unchanged.", },
+      para: "Lorem Ipsum is that it has a more-or-less normal distribution of letters, but also the leap into essentially unchanged.",
+    },
     {
       src: "glass2.jpg",
       alt: "Glass 2",
@@ -89,9 +95,9 @@ const images = {
   plants: [
     { src: sliderimage4, alt: "Plants 1" },
     { src: "plants2.jpg", alt: "Plants 2" },
-    // Other plant images...
+   
   ],
-  // Define other categories similarly...
+  
   GlassProject: [
     {
       src: sliderimage1,
