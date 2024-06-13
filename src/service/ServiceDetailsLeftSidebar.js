@@ -5,6 +5,8 @@ import ServiceGallery from "./components/ServiceGallery";
 import BrandLogoSlider from "../components/BrandLogoSlider";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
+import ore from "../assets/images/services/Rectangle 41995.png";
+import sban from "../assets/images/fiza/sopbanner.png";
 class ServiceDetailsLeftSidebar extends Component {
   render() {
     return (
@@ -17,7 +19,7 @@ class ServiceDetailsLeftSidebar extends Component {
         <div
           className="breadcrumb-area breadcrumb-bg"
           style={{
-            backgroundImage: `url(assets/img/backgrounds/funfact-bg.jpg)`,
+            backgroundImage: `url(${sban})`,
           }}
         >
           <div className="container">
@@ -51,7 +53,14 @@ class ServiceDetailsLeftSidebar extends Component {
                 <div className="col-lg-8 col-12 order-1 order-lg-2">
                   <div className="service-details">
                     {/* service gallery */}
-                    <ServiceGallery />
+                    {/* <ServiceGallery /> */}
+                    <div className="flex justify-center">
+                      <img
+                        src={ore}
+                        alt="ore"
+                        className="w-11/12 max-w-screen-lg h-auto"
+                      />
+                    </div>
 
                     <div className="content section-space--top--30">
                       <div className="row">
@@ -60,33 +69,36 @@ class ServiceDetailsLeftSidebar extends Component {
                             Ore Minning & quarry industries
                           </h2>
                           <p className="mt-3">
-                            Fiza Engineering Corporation provides comprehensive
-                            solutions for the ore mining and quarry industries.
-                            Our services encompass the entire lifecycle of
-                            mining projects, from greenfield development to
-                            production. We offer advanced beneficiation and ore
-                            processing systems, including auto washing, grading,
-                            stockpiling, and conveyor systems to ensure
-                            efficient loading and discharge of final products.
-                            Our specialized equipment is tailored to meet the
-                            specific demands of mining sites, incorporating
-                            automation and cost-effective solutions. We also
-                            facilitate flexible financial arrangements for the
-                            supply of plant and machinery, ensuring seamless
-                            project execution and operational efficiency
+                            Fiza Engineering Corporation delivers comprehensive
+                            and cutting-edge solutions for the ore mining and
+                            quarry industries. Our services span the entire
+                            lifecycle of mining projects, from initial
+                            greenfield development through to full-scale
+                            production. We offer state-of-the-art beneficiation
+                            and ore processing systems, including automated
+                            washing, precise grading, strategic stockpiling, and
+                            efficient conveyor systems, ensuring the seamless
+                            loading and discharge of final products.
                           </p>
-                          {/* <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Asperiores aliquid quod, officiis unde nostrum
-                            itaque! Adipisci dolorum, ab dolor, exercitationem
-                            praesentium dolorem quo voluptatum itaque
-                            dignissimos, sit esse cupiditate. Doloremque rerum
-                            similique a nobis placeat in illum, quo quaerat, ut
-                            repellat, fuga itaque? Nihil mollitia nisi, nam,
-                            accusantium nemo consequuntur reiciendis autem dicta
-                            consequatur earum beatae dolor distinctio, debitis
-                            repudiandae?
-                          </p> */}
+                          <p className="mt-3">
+                            Our specialized equipment is meticulously designed
+                            to meet the unique demands of mining sites,
+                            incorporating the latest advancements in automation
+                            and cost-effective methodologies. By doing so, we
+                            enhance productivity and ensure optimal operational
+                            efficiency. Additionally, we provide flexible and
+                            tailored financial arrangements for the procurement
+                            and supply of plant and machinery, facilitating
+                            seamless project execution and uninterrupted
+                            operations. At Fiza Engineering Corporation, we are
+                            committed to innovation and excellence, offering
+                            robust solutions that drive the success of your
+                            mining endeavors. Our comprehensive suite of
+                            services and equipment ensures that your projects
+                            are executed with precision, efficiency, and
+                            reliability, positioning you at the forefront of the
+                            mining industry.
+                          </p>
                         </div>
                         {/* <div className="col-lg-6 col-12 section-space--top--30">
                           <h3>Project Analysis</h3>

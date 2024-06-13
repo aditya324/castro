@@ -4,7 +4,8 @@ import Sidebar from "./components/Sidebar";
 import ServiceGallery from "./components/ServiceGallery";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
-
+import sban from "../assets/images/fiza/sopbanner.png";
+import adv from "../assets/images/services/Rectangle 41996.png";
 class ServiceDetailsLeftSidebar2 extends Component {
   render() {
     return (
@@ -17,7 +18,7 @@ class ServiceDetailsLeftSidebar2 extends Component {
         <div
           className="breadcrumb-area breadcrumb-bg"
           style={{
-            backgroundImage: `url(assets/img/backgrounds/funfact-bg.jpg)`,
+            backgroundImage: `url(${sban})`,
           }}
         >
           <div className="container">
@@ -51,7 +52,14 @@ class ServiceDetailsLeftSidebar2 extends Component {
                 <div className="col-lg-8 col-12 order-1 order-lg-2">
                   <div className="service-details">
                     {/* service gallery */}
-                    <ServiceGallery />
+                    {/* <ServiceGallery /> */}
+                    <div className="flex justify-center">
+                      <img
+                        src={adv}
+                        alt="ore"
+                        className="w-11/12 max-w-screen-lg h-auto"
+                      />
+                    </div>
 
                     <div className="content section-space--top--30">
                       <div className="row">
@@ -61,25 +69,29 @@ class ServiceDetailsLeftSidebar2 extends Component {
                             Equipment
                           </h2>
                           <p className="mt-3">
-                            We supply complete road construction machinery,
-                            including dozers, graders, wheel loaders, and more.
-                            We provide various heavy-duty vehicles and
-                            attachments for exploration, mining, and oil & gas
-                            industries. We offer a range of generators,
-                            dredgers, patrol boats, and marine engines.
+                            At Fiza Engineering Corporation, we specialize in
+                            supplying comprehensive road construction machinery,
+                            including dozers, graders, wheel loaders, and a wide
+                            array of other essential equipment. Our portfolio
+                            extends beyond road construction to encompass a
+                            variety of heavy-duty vehicles and attachments
+                            designed for the exploration, mining, and oil & gas
+                            industries.
                           </p>
-                          {/* <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Asperiores aliquid quod, officiis unde nostrum
-                            itaque! Adipisci dolorum, ab dolor, exercitationem
-                            praesentium dolorem quo voluptatum itaque
-                            dignissimos, sit esse cupiditate. Doloremque rerum
-                            similique a nobis placeat in illum, quo quaerat, ut
-                            repellat, fuga itaque? Nihil mollitia nisi, nam,
-                            accusantium nemo consequuntur reiciendis autem dicta
-                            consequatur earum beatae dolor distinctio, debitis
-                            repudiandae?
-                          </p> */}
+                          <p className="mt-3">
+                            We also offer an extensive range of generators to
+                            ensure uninterrupted power supply, alongside
+                            dredgers and patrol boats for marine operations. Our
+                            selection of marine engines is crafted to meet the
+                            demanding needs of maritime activities, providing
+                            reliable performance and durability. In addition, we
+                            provide advanced waste management equipment tailored
+                            to handle the specific requirements of different
+                            industries. Our offerings include state-of-the-art
+                            systems for waste collection, transportation, and
+                            disposal, ensuring environmentally responsible and
+                            efficient waste management solutions.
+                          </p>
                         </div>
                         {/* <div className="col-lg-6 col-12 section-space--top--30">
                           <h3>Project Analysis</h3>

@@ -1,9 +1,6 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 .slick-slide {
   position: relative;
@@ -12,10 +9,12 @@
 .border-gradient {
   border-radius: 25px; /* Adjust the roundness of the corners */
   border: 2px solid transparent; /* Transparent border to prepare for masking */
-  background: linear-gradient(to right, #8AA0B4, #597A97); /* Gradient background */
-  -webkit-mask: 
-     linear-gradient(#fff 0 0) padding-box, 
-     linear-gradient(#fff 0 0);
+  background: linear-gradient(
+    to right,
+    #8aa0b4,
+    #597a97
+  ); /* Gradient background */
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
@@ -23,7 +22,6 @@
 .arrow-icon {
   color: blue; /* Set the color of the icon to blue */
 }
-
 
 .flip-card {
   perspective: 1000px;
@@ -74,15 +72,22 @@
   animation: rotate 10s linear infinite;
 }
 
-
-
 /* In your index.css or corresponding CSS file */
 
 .group:hover .group-hover\:opacity-100 {
-    opacity: 1 !important;
-  }
-  
-  .group-hover\:opacity-100 {
-    transition: opacity 0.3s ease-in-out;
-  }
-  
+  opacity: 1 !important;
+}
+
+.group-hover\:opacity-100 {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.service-grid-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-grid-item__content {
+  flex-grow: 1;
+}

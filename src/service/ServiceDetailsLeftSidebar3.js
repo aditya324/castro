@@ -4,7 +4,8 @@ import Sidebar from "./components/Sidebar";
 import ServiceGallery from "./components/ServiceGallery";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
-
+import sban from "../assets/images/fiza/sopbanner.png";
+import metal from "../assets/images/services/Rectangle 41999.png";
 class ServiceDetailsLeftSidebar3 extends Component {
   render() {
     return (
@@ -17,7 +18,7 @@ class ServiceDetailsLeftSidebar3 extends Component {
         <div
           className="breadcrumb-area breadcrumb-bg"
           style={{
-            backgroundImage: `url(assets/img/backgrounds/funfact-bg.jpg)`,
+            backgroundImage: `url(${sban})`,
           }}
         >
           <div className="container">
@@ -51,7 +52,14 @@ class ServiceDetailsLeftSidebar3 extends Component {
                 <div className="col-lg-8 col-12 order-1 order-lg-2">
                   <div className="service-details">
                     {/* service gallery */}
-                    <ServiceGallery />
+                    {/* <ServiceGallery /> */}
+                    <div className="flex justify-center">
+                      <img
+                        src={metal}
+                        alt="ore"
+                        className="w-11/12 max-w-screen-lg h-auto"
+                      />
+                    </div>
 
                     <div className="content section-space--top--30">
                       <div className="row">
@@ -60,22 +68,34 @@ class ServiceDetailsLeftSidebar3 extends Component {
                             Comprehensive Metal & Mineral Trading and Export
                           </h2>
                           <p className="mt-3">
-                            At Fiza Engineering Corporation, we specialize in
-                            the trading and export of a wide range of mined ores
-                            and minerals, catering to the diverse needs of
-                            industries worldwide. Our portfolio includes
-                            high-demand resources such as coal, iron ore,
-                            chromite, copper concentrates, and more, ensuring a
-                            steady supply of essential materials for various
-                            industrial applications.
+                            Fiza Engineering Corporation specializes in the
+                            comprehensive trading and global export of a diverse
+                            array of mined ores and minerals, meeting the
+                            intricate needs of industries worldwide. Our
+                            extensive portfolio encompasses a rich selection of
+                            high-demand resources, ranging from coal and iron
+                            ore to chromite and copper concentrates, ensuring a
+                            consistent and reliable supply of essential
+                            materials for various industrial applications.
                           </p>
-                          <p>
-                            We also supply a comprehensive array of industrial
-                            materials, including high-quality copper, titanium
-                            dioxide, steel, fertilizers, and chemical
-                            composites. These materials are crucial for numerous
+                          <p className="mt-3">
+                            In addition to these primary commodities, we also
+                            provide an expansive range of industrial materials,
+                            including premium-grade copper, titanium dioxide,
+                            steel, fertilizers, and chemical composites. These
+                            vital materials play indispensable roles in numerous
                             manufacturing processes and construction projects,
-                            offering superior performance and reliability.
+                            offering unparalleled performance and reliability to
+                            our clients. With a steadfast commitment to
+                            excellence and reliability, Fiza Engineering
+                            Corporation stands as a trusted partner in
+                            facilitating seamless trade and export operations,
+                            delivering top-notch quality and service to
+                            industries worldwide. Our dedication to meeting the
+                            diverse needs of our clients drives us to
+                            continually expand and diversify our product
+                            offerings, ensuring that we remain at the forefront
+                            of the global metal and mineral trading landscape.
                           </p>
                         </div>
                         {/* <div className="col-lg-6 col-12 section-space--top--30">

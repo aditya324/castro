@@ -4,7 +4,7 @@ import VisibilitySensor from "react-visibility-sensor";
 
 class Funfact extends Component {
   state = {
-    didViewCountUp: false
+    didViewCountUp: false,
   };
 
   onVisibilityChange = (isVisible) => {
@@ -15,10 +15,10 @@ class Funfact extends Component {
 
   render() {
     let data = [
-      { img: "funfact-project.png", countNum: 598, countTitle: "Projects" },
-      { img: "funfact-clients.png", countNum: 128, countTitle: "Clients" },
-      { img: "funfact-success.png", countNum: 114, countTitle: "Success" },
-      { img: "funfact-award.png", countNum: 109, countTitle: "Awards" }
+      { img: "funfact-project.png", countNum: 200, countTitle: "Projects" },
+      { img: "funfact-clients.png", countNum: 150, countTitle: "Clients" },
+      { img: "funfact-success.png", countNum: 20, countTitle: "Countries" },
+      { img: "funfact-award.png", countNum: 5, countTitle: "Awards" },
     ];
 
     let DataList = data.map((val, i) => {
@@ -27,7 +27,11 @@ class Funfact extends Component {
           className="single-fact col-md-3 col-6 section-space--bottom--30"
           key={i}
         >
-          <img src={`assets/img/icons/${val.img}`} className="lg:ml-32 ml-16 " alt="" />
+          <img
+            src={`assets/img/icons/${val.img}`}
+            className="lg:ml-32 ml-16 "
+            alt=""
+          />
           <h1 className="counter">
             <VisibilitySensor
               onChange={this.onVisibilityChange}
@@ -48,7 +52,7 @@ class Funfact extends Component {
         <div
           className="funfact-section section-space--inner--100 funfact-bg"
           style={{
-            backgroundImage: `url(assets/img/backgrounds/funfact-bg.jpg)`
+            backgroundImage: `url(assets/img/backgrounds/funfact-bg.jpg)`,
           }}
         >
           <div className="container">

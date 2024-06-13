@@ -3,21 +3,34 @@ import NavBar from "../components/NavBar";
 import BrandLogoSlider from "../components/BrandLogoSlider";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
+// import sbanner from "../assets/images/fiza/SOP banner.jpg";
+import ore from "../assets/images/services/Rectangle 41995.png";
+import com from "../assets/images/services/Rectangle 41998.png";
+import adv from "../assets/images/services/Rectangle 41996.png";
+import metal from "../assets/images/services/Rectangle 41999.png";
+import agr from "../assets/images/services/Rectangle 41997.png";
+import meti from "../assets/images/fiza/metal trading.png";
+import agriculture from "../assets/images/fiza/agriculture.png";
+import waste from "../assets/images/fiza/waste.png";
+import plant from "../assets/images/fiza/plant.png";
+import mine from "../assets/images/fiza/mine.png";
+import sop from "../assets/images/fiza/sopbanner.png";
+
 class Services extends Component {
   render() {
     let data = [
       {
         pageLink: "service-details-left-sidebar",
-        img: "service1.jpg",
-        iconClass: "flaticon-002-welding",
+        img: ore,
+        iconClass: mine,
         serviceTitle: "Ore Minning & quarry industries",
         serviceSubtitle:
           "Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor",
       },
       {
         pageLink: "service-details-left-sidebar1",
-        img: "service2.jpg",
-        iconClass: "flaticon-004-walkie-talkie",
+        img: com,
+        iconClass: plant,
         serviceTitle:
           "Comprehensive engineering solutions for plant & machinery",
         serviceSubtitle:
@@ -25,24 +38,24 @@ class Services extends Component {
       },
       {
         pageLink: "service-details-left-sidebar2",
-        img: "service3.jpg",
-        iconClass: "flaticon-015-cart",
+        img: adv,
+        iconClass: waste,
         serviceTitle: "Advanced Vehicle Solutions & Waste Management Equipment",
         serviceSubtitle:
           "Supply of Off-Road Vehicles & Automobiles, and Waste Management Equipment",
       },
       {
         pageLink: "service-details-left-sidebar3",
-        img: "service-3.jpg",
-        iconClass: "flaticon-010-tank-1",
+        img: metal,
+        iconClass: meti,
         serviceTitle: "Comprehensive Metal & Mineral Trading and Export",
         serviceSubtitle:
           "We trade and export various mined ores and minerals, including coal, iron ore, chromite, copper concentrates, and more",
       },
       {
         pageLink: "service-details-left-sidebar4",
-        img: "service-2.jpg",
-        iconClass: "flaticon-004-walkie-talkie",
+        img: agr,
+        iconClass: agriculture,
         serviceTitle: "Agricultural & Commercial Farming Solutions",
         serviceSubtitle:
           "We undertake comprehensive commercial farming projects, leveraging global expertise to ensure optimal crop selection, mechanized plantation, and high profitability.",
@@ -68,14 +81,14 @@ class Services extends Component {
               <div className="service-grid-item__image-wrapper">
                 <a href={`${process.env.PUBLIC_URL}/${val.pageLink}`}>
                   <img
-                    src={`assets/img/service/${val.img}`}
-                    className="img-fluid"
+                    src={`${val.img}`}
+                    className="img-fluid rounded-lg "
                     alt="Service Grid"
                   />
                 </a>
               </div>
               <div className="icon">
-                <i className={val.iconClass} />
+                <img src={val.iconClass} />
               </div>
             </div>
             <div className="service-grid-item__content">
@@ -107,7 +120,7 @@ class Services extends Component {
         <div
           className="breadcrumb-area breadcrumb-bg"
           style={{
-            backgroundImage: `url(assets/img/backgrounds/funfact-bg.jpg)`,
+            backgroundImage: `url(${sop})`,
           }}
         >
           <div className="container">

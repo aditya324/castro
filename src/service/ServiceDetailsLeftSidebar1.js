@@ -5,10 +5,8 @@ import ServiceGallery from "./components/ServiceGallery";
 import BrandLogoSlider from "../components/BrandLogoSlider";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
-
-
-
-
+import com from "../assets/images/services/Rectangle 41998.png";
+import sban from "../assets/images/fiza/sopbanner.png";
 class ServiceDetailsLeftSidebar1 extends Component {
   render() {
     return (
@@ -21,7 +19,7 @@ class ServiceDetailsLeftSidebar1 extends Component {
         <div
           className="breadcrumb-area breadcrumb-bg"
           style={{
-            backgroundImage: `url(assets/img/backgrounds/funfact-bg.jpg)`,
+            backgroundImage: `url(${sban})`,
           }}
         >
           <div className="container">
@@ -50,12 +48,19 @@ class ServiceDetailsLeftSidebar1 extends Component {
         <div className="page-wrapper section-space--inner--120">
           {/*Service section start*/}
           <div className="service-section">
-            <div className="container rounded">
+            <div className="container">
               <div className="row">
                 <div className="col-lg-8 col-12 order-1 order-lg-2">
                   <div className="service-details">
                     {/* service gallery */}
-                    <ServiceGallery />
+                    {/* <ServiceGallery /> */}
+                    <div className="flex justify-center">
+                      <img
+                        src={com}
+                        alt="ore"
+                        className="w-11/12 max-w-screen-lg h-auto"
+                      />
+                    </div>
 
                     <div className="content section-space--top--30">
                       <div className="row">
@@ -65,29 +70,32 @@ class ServiceDetailsLeftSidebar1 extends Component {
                             machinery
                           </h2>
                           <p className="mt-3">
-                            We offer comprehensive solutions for mining
-                            industries, from initial setup to production stages.
-                            We provide beneficiation, ore processing, auto
-                            washing, grading, stockpiling, and conveyor systems
-                            for efficient mining operations. We design and
-                            supply special-purpose equipment tailored to
-                            specific site requirements, including automation and
-                            downstream operations. We offer flexible financial
-                            terms for plant and machinery supply, including
-                            leasing and deferred payment options.
+                            At Fiza Engineering Corporation, we offer
+                            comprehensive and tailored solutions for the mining
+                            industries, covering every phase from initial setup
+                            to full-scale production stages. Our services
+                            encompass advanced beneficiation and ore processing
+                            systems, along with automated washing, precise
+                            grading, strategic stockpiling, and efficient
+                            conveyor systems to ensure smooth and efficient
+                            mining operations.
                           </p>
-                          {/* <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Asperiores aliquid quod, officiis unde nostrum
-                            itaque! Adipisci dolorum, ab dolor, exercitationem
-                            praesentium dolorem quo voluptatum itaque
-                            dignissimos, sit esse cupiditate. Doloremque rerum
-                            similique a nobis placeat in illum, quo quaerat, ut
-                            repellat, fuga itaque? Nihil mollitia nisi, nam,
-                            accusantium nemo consequuntur reiciendis autem dicta
-                            consequatur earum beatae dolor distinctio, debitis
-                            repudiandae?
-                          </p> */}
+                          <p className="mt-3">
+                            We design and supply special-purpose equipment
+                            meticulously crafted to meet specific site
+                            requirements, incorporating cutting-edge automation
+                            and streamlined downstream operations. Our goal is
+                            to enhance productivity and operational efficiency
+                            through innovative and cost-effective solutions.
+                            Furthermore, we provide flexible financial terms for
+                            the supply of plant and machinery, offering leasing,
+                            deferred payment options, and customized financing
+                            arrangements.Our commitment to excellence and
+                            innovation positions Fiza Engineering Corporation as
+                            a trusted partner in delivering high-quality,
+                            reliable, and efficient engineering solutions for
+                            the mining industry.
+                          </p>
                         </div>
                         {/* <div className="col-lg-6 col-12 section-space--top--30">
                           <h3>Project Analysis</h3>

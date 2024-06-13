@@ -1,7 +1,8 @@
 import about from "../assets/images/about.png";
 import { TiTick } from "react-icons/ti";
 import banner from "../assets/images/star.png";
-import React from "react";
+import React from 'react'
+
 const About = () => {
   return (
     <>
@@ -9,7 +10,7 @@ const About = () => {
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 ">
           <div className="lg:mt-0 lg:col-span-5 lg:flex md:mt-10 ">
             <img
-              className="lg:h-full w-full object-cover rounded-lg lg:ml-12 ml-10 lg:mt-0 mt-4 md:ml-24"
+              className="lg:h-full w-5/6 object-cover rounded-lg lg:ml-32 ml-10 lg:mt-0 mt-4 md:ml-24"
               src={about}
               alt="mockup"
             />
@@ -112,6 +113,7 @@ const About = () => {
         </p>
       </div>
     </>
-  );
-};
-export default About;
+  )
+}
+
+export default About
