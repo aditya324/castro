@@ -2,6 +2,7 @@ import about from "../assets/images/about.png";
 import { TiTick } from "react-icons/ti";
 import banner from "../assets/images/star.png";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -36,10 +37,11 @@ const About = () => {
               Fiza Engineering Corporation.
             </h1>
             <p className="max-w-2xl mb-6 font-light text-left text-gray-500 lg:mb-8 md:text-lg lg:text-xl ">
-              Lorem Ipsum is that it has a more-or-less normal distribution of
-              letters, as opposed to using 'Content here, content here', making
-              it look like readable English. Many desktop publishing packages
-              and web page editors now use Ipsum as their default model text.
+              Started with Construction Equipment Trading & Procurement Service
+              providing activities for Mining and Construction companies, today,
+              ourselves are into Mining, Project Development and Commer- cial
+              Farming & Agricultural Business in Africa, Asia, CIS and Middle
+              East countries.
             </p>
             <div className="text-left">
               <div className="flex flex-col sm:flex-row gap-4">
@@ -73,29 +75,31 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="text-left mt-4">
-              <button
-                type="button"
-                className="text-blue-700 font-medium rounded-lg text-sm px-2 py-2.5 text-center inline-flex items-center "
-              >
-                Know more
-                <svg
-                  className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
+            <a href="/about-us">
+              <div className="text-left mt-4">
+                <button
+                  type="button"
+                  className="text-blue-700 font-medium rounded-lg text-sm px-2 py-2.5 text-center inline-flex items-center "
                 >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </button>
-            </div>
+                  Know more
+                  <svg
+                    className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -105,10 +109,12 @@ const About = () => {
             Our Services
           </h1>
         </div>
-        <p className="inline-block text-sm mt-4 lg:mt-5">
-          Lorem Ipsum is that it has a more-or-less normal distribution <br />
+        <p className="inline-block text-lg mt-4 lg:mt-5">
+          Driving Construction Forward with Innovative, Reliable Engineering
+          Solutions and Advanced Machinery for Heavy-Duty <br />
           <span className="block">
-            of letters, but also the leap into essentially unchanged.
+            Excellence and Comprehensive Equipment Needs Heavy-Duty Excellence
+            and Comprehensive Equipment Needs.
           </span>
         </p>
       </div>

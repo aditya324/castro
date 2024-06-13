@@ -11,6 +11,9 @@ import MobileMenu from "../components/MobileMenu";
 import about from "../assets/images/about.png";
 import banner from "../assets/images/star.png";
 import about2 from "../assets/images/about2.jpg";
+import aboutb from "../assets/images/gallery/WhatsApp Image 2024-06-12 at 18.33.12_b0746664.jpg";
+import aboutc from "../assets/images/gallery/WhatsApp Image 2024-06-12 at 18.33.14_d56458f6.jpg";
+
 class About extends Component {
   constructor() {
     super();
@@ -127,12 +130,12 @@ class About extends Component {
               <div className="about-wrapper row">
                 <div className="col-sm-6 col-12 order-1 order-lg-2">
                   <div className="about-image about-image-1">
-                    <img src="assets/img/about/about-1.jpg" alt="" />
+                    <img src={aboutb} alt="" style={{ height: "600px" }} />
                   </div>
                 </div>
                 <div className="col-sm-6 col-12 order-2 order-lg-3">
                   <div className="about-image about-image-2">
-                    <img src="assets/img/about/about-2.jpg" alt="" />
+                    <img src={aboutc} alt="" style={{ height: "600px" }} />
                   </div>
                 </div>
                 <div className="col-lg-6 col-12 order-3 order-lg-1">

@@ -36,7 +36,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full lg:h-screen overflow-x-hidden">
+    <div className="relative w-full lg:h-screen overflow-hidden">
       <nav className="absolute w-full bg-transparent z-10">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between  mx-auto">
           <Link
@@ -303,13 +303,12 @@ const Carousel = () => {
             Fiza Engineering
           </h1>
           <h1 className="text-6xl font-bold mt-2 text-white">Corporation</h1>
-          <p className="mt-4 mb-4">
-            Lorem Ipsum is not simply random text. It has roots in a piece of
-            classical Latin literature <br /> from 45 BC, making it over 2000
-            years old. Richard McClintock, a Latin professor at <br />
-            Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words <br />
-            ipsum lorem.
+          <p className="mt-4 mb-4 text-lg">
+            Fiza Engineering Corporation is African based, Engineering, project
+            development, <br /> and Construction & Mining Equipment trading
+            company, which owned by an Indian; <br /> Engineering graduate with
+            post qualification in finance from most reputed institute <br /> of
+            India, with over 20 years of experience in above fields.
           </p>
           <div>
             <button className="bg-blue-700 text-white py-2 px-8 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-opacity-50">

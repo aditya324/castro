@@ -117,31 +117,72 @@ class Products extends Component {
 
     let Datalist = data.map((val, i) => {
       return (
+        // <div
+        //   className="col-lg-4 col-sm-6 col-12 section-space--bottom--30"
+        //   key={i}
+        // >
+        //   <div className="service-grid-item service-grid-item--style2">
+        //     <div className="service-grid-item__image">
+        //       <div className="service-grid-item__image-wrapper">
+        //         {/* href={`${process.env.PUBLIC_URL}/${val.pageLink}`} */}
+        //         <a>
+        //           <img src={`${val.img}`} className="img-fluid" alt="" />
+        //         </a>
+        //       </div>
+        //     </div>
+        //     <div className="service-grid-item__content">
+        //       <h3 className="title">
+        //         {/* /${val.pageLink} */}
+        //         <a href={`${process.env.PUBLIC_URL}`}>{val.projectTitle}</a>
+        //       </h3>
+        //       <p className="subtitle">{val.projectSubtitle}</p>
+        //       {/* <a
+        //         href={`${process.env.PUBLIC_URL}/${val.pageLink}`}
+        //         className="see-more-link"
+        //       >
+        //         SEE MORE
+        //       </a> */}
+        //     </div>
+        //   </div>
+        // </div>
         <div
           className="col-lg-4 col-sm-6 col-12 section-space--bottom--30"
           key={i}
+          style={{ borderRadius: "10px", overflow: "hidden" }}
         >
-          <div className="service-grid-item service-grid-item--style2">
+          <div
+            className="service-grid-item service-grid-item--style2"
+            style={{ borderRadius: "10px", overflow: "hidden" }}
+          >
             <div className="service-grid-item__image">
               <div className="service-grid-item__image-wrapper">
-                {/* href={`${process.env.PUBLIC_URL}/${val.pageLink}`} */}
                 <a>
-                  <img src={`${val.img}`} className="img-fluid" alt="" />
+                  <img
+                    src={`${val.img}`}
+                    className="img-fluid"
+                    alt=""
+                    style={{
+                      objectFit: "cover",
+                      width: "100%",
+                      height: "auto",
+                    }}
+                  />
                 </a>
               </div>
             </div>
             <div className="service-grid-item__content">
               <h3 className="title">
-                {/* /${val.pageLink} */}
-                <a href={`${process.env.PUBLIC_URL}`}>{val.projectTitle}</a>
+                <a href={`${process.env.PUBLIC_URL}/${val.pageLink}`}>
+                  {val.projectTitle}
+                </a>
               </h3>
               <p className="subtitle">{val.projectSubtitle}</p>
               {/* <a
-                href={`${process.env.PUBLIC_URL}/${val.pageLink}`}
-                className="see-more-link"
-              >
-                SEE MORE
-              </a> */}
+              href={`${process.env.PUBLIC_URL}/${val.pageLink}`}
+              className="see-more-link"
+            >
+              SEE MORE
+            </a> */}
             </div>
           </div>
         </div>

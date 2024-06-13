@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
+import count from "../assets/images/fiza/Countdown.jpg";
 
 class Funfact extends Component {
   state = {
@@ -52,7 +53,7 @@ class Funfact extends Component {
         <div
           className="funfact-section section-space--inner--100 funfact-bg"
           style={{
-            backgroundImage: `url(assets/img/backgrounds/funfact-bg.jpg)`,
+            backgroundImage: `url(${count})`,
           }}
         >
           <div className="container">
